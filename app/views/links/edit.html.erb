@@ -1,0 +1,33 @@
+<h1>Edit Link</h1>
+
+<% if @link.errors.any? %>
+  <div id="error_explanation"></div>
+    
+    <h2><%= pluralize(@link.errorr.count, "error") %> Link prohibited from being saved: </h2>
+
+    <ul>
+      
+      <% @link.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+
+    </ul>
+
+  </div>
+
+<% end %>
+
+<%= form_tag "/links/#{@link.id}", method: :patch do %>
+  <div class = "link_form">
+
+    <%= label_tag :slug %>:
+    <%= text_field_tag :slug, @link.slug %>
+
+    <%= label_tag :target_url %>:
+    <%= text_field_tag :target_url, @link.target_url %>
+
+    <%= submit_tag "Submit", class: "btn btn-primary" %>
+    
+  </div>
+
+<% end %>
