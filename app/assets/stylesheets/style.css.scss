@@ -3,6 +3,62 @@ body {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
+h2, .field {
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  margin-right: 675px;
+  padding: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.link2 {
+  background-color: white;
+  border: white;
+  text-shadow: none;
+}
+
+
+h3 {
+  margin-right: 950px;
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  padding: 5px;
+  
+}
+
+a {
+    border-radius: 2px;
+    border: solid 1px #20538D;
+    background: #F3F3F3;
+    color: black;
+    padding: 2px 12px;
+  }
+  
+.link3 {
+  background-color: white;
+  color: blue;
+  text-shadow: none;
+  border: none;
+  border-shadow: none;
+  padding: 3px;
+}
+
+p {
+  margin-right: 950px;
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  padding: 5px;
+  text-align: center;
+  
+}
+
+
 .link_form {
   background-color: white;
   margin-left: 325px;
@@ -22,8 +78,9 @@ body {
   background-color: white;
 }
 
-.navbar {
+.navbar, .navbar-brand, .dropdown-toggle {
   background-color: black;
+  border: black;
 }
 
 table, th, td {
@@ -33,12 +90,18 @@ table, th, td {
 
 }
 
+.button_to, .actions {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .create_btn {
-  margin-left: 260px;
+  margin-top: 5px;
+  margin-left: 310px;
   margin-right: 282px;
 }
 
-h1, h3 {
+h1, h4 {
   background-color: white;
   border: 3px solid black;
   margin-right: 350px;

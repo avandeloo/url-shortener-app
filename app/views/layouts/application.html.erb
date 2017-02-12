@@ -26,18 +26,19 @@
 
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="options-nav">Options<b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="options-nav">Options</a>
             <ul class="dropdown-menu">
               <% if current_user.nil? %>
-                <li><a href="/users/sign_up" class="link">Sign Up</a></li>
-                <li><a href="/users/sign_in">Sign In</a></li>
+                <li><a href="/users/sign_up" class="link2">Sign Up</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/users/sign_in" class="link2">Sign In</a></li>
               <% end %>
 
               <% if current_user %>
                 
-                <li><a href="/users/edit">Edit Profile</a></li>
+                <li><a href="/users/edit" class="link2">Edit Profile</a></li>
                 <li class="divider"></li>
-                <li><a href="/users/sign_out" id="sign_out_link">Sign Out</a></li>
+                <li><a href="/users/sign_out" id="sign_out_link" class="link2">Sign Out</a></li>
               <% end %>
             </ul>
           </li>

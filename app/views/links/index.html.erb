@@ -8,7 +8,7 @@
   </tr>
   <% @links.each do |link| %>
     <tr>
-      <td><a href='/<%= link.slug %>'><%= link.slug %></a></td>
+      <td><%= link.slug %></td>
       <td><%= link.target_url %></td>
       <td><%= link.created_at.strftime("%A, %b %d, %Y %l:%M %p") %></td>
       <td class = "btn-g"><div class="btn-group" role="group" aria-label="...">
@@ -21,4 +21,4 @@
   <% end %>
 
 <table>
-<p class = "create_btn"><%= link_to "Create New Link", "/links/new", class: "btn btn-success" %></p>
+<div class = "create_btn"><%= link_to "Create New Link", "/links/new", class: "btn btn-success" %></div>

@@ -63,7 +63,7 @@ class LinksController < ApplicationController
                             )
 
       @link.standardize_target_url!
-      flash[:success] = "Link Created Successfully"
+      flash[:success] = "Link Updated Successfully"
       redirect_to '/links'
     else
       render 'edit'
